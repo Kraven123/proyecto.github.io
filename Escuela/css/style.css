@@ -2,17 +2,34 @@ body{
     border: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(150deg, #fc0404, #142e3d);
+    /*background: linear-gradient(150deg, #fc0404, #142e3d);*/
     height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1;
+    transition: 0.2s ease-in-out;
 }
 
 .formulario{
+    z-index: 1;
     position: absolute;
     top: 50%;
     left: 50%;
+    /*z-index: 2;Para que este adelante del fondo*/
     transform:  translate(-50%,-50%);
-    width: center;
-    background-color: white;
+    width: auto;
+    background-color:rgb(255, 255, 255);
     border-radius: 10px;
 }
 
@@ -52,7 +69,7 @@ form .username{
     font-size: 16px;
     pointer-events: none;
     transition: .5s;
-}
+}*/
 
 .username span::before{
     content: '';

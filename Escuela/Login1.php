@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <video id= backgroundVideo class="video-background" autoplay muted >
+    <source src="video/fondo2.mp4" type="video/mp4">
+    </video>
+    <script src="js/main.js"></script>
+
    <div class="formulario">
         <form action="" method="post">
             <h1>Inicio De Sesión</h1>
